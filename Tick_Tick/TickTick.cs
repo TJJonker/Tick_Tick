@@ -1,15 +1,23 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 namespace Tick_Tick
 {
-    public class Game1 : Game
+    public class TickTick : Game
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        public Game1()
+        [STAThread]
+        static void Main()
+        {
+            TickTick game = new TickTick();
+            game.Run();
+        }
+
+        public TickTick()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
