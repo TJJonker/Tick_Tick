@@ -31,7 +31,7 @@ namespace Engine
             }
         }
 
-        public SpriteSheet(string assetName, int sheetIndex = 0)
+        public SpriteSheet(string assetName, float depth, int sheetIndex = 0)
         {
             sprite = ExtendedGame.AssetManager.LoadSprite(assetName);
             sheetColumns = 1;
