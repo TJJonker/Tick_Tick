@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animation\Animation.cs" />
+    <Compile Include="Animation\AnimationGameObject.cs" />
     <Compile Include="AssetManager.cs" />
+    <Compile Include="CollisionDetection\Circle.cs" />
+    <Compile Include="CollisionDetection\CollisionDetection.cs" />
     <Compile Include="ExtendedGame.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="GameObjectList.cs" />
@@ -52,6 +56,9 @@
     <Compile Include="IGameLoopObject.cs" />
     <Compile Include="InputHelper.cs" />
     <Compile Include="Levels\ExtendedGameWithLevels.cs" />
+    <Compile Include="Levels\IPlayingState.cs" />
+    <Compile Include="Levels\LevelButton.cs" />
+    <Compile Include="Levels\LevelStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
